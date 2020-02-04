@@ -1,0 +1,122 @@
+<script src="/javascripts/comment.js"></script>
+
+
+<h2>Welcome to {{title}}</h2>
+<p>Club Cool is for all things 'cool'. Ice Cubes, Smooth Jazz, Absolute Zero, but not the Earth. Global warming is a serious issue. Stick around, but not too much. We don't want squares in our club. We may not be a sports club, but we sure do win a lot, we're that cool.</p>
+
+<h3>Want to tell us how cool we are? Come comment<a href='#comment-container'> here</a></h3>
+
+<h3>Our latest News</h3>
+<p>Here you can find out a bit more on the cool goings-on of our club</p>
+<table class="table">
+	<tr>	
+		<th width="20%">Date Posted</th>	
+		<th width="100%">Article</th>
+	</tr>
+	<tr>	
+		<td>7/9/2019</td>
+		<td><a href='#'>How can we cool down the Earth? Global Warming and you</a></td>
+	</tr>
+	<tr>
+		<td>26/4/2019</td>
+		<td><a href='#'>5 great Cool Jazz artists of the 60s</a></td>
+	</tr>
+</table>
+
+<br>
+
+<h3> Our Wins </h3>
+<p> We always win, even when we lose. Especially when we lose. Cause losing is an opportunity to learn.</p>
+<table class="table">
+	<tr>	
+		<th width="15%">Final Score</th>
+		<th width="30%" class="align-center">Status</th>	
+		<th width="35%">Match</th>
+		<th width="20%">Versus</th>
+		<th>Date</th>
+	</tr>
+	<tr>	
+		<td>2:3</td>
+		<td align="center"><strike>Loss</strike> Learning Experience</td>
+		<td>Annual Underwater Lacross Playoffs</td>
+		<td>The Hot Rocks</td>	
+		<td>3/9/19</td>
+	</tr>
+	<tr>	
+		<td>7:3</td>
+		<td align="center">Win</td>
+		<td>Competitive Spoon Playing competition</td>
+		<td>The Forkin' Bad Boys</td>
+		<td>17/6/18</td>
+	</tr>
+</table>
+
+<h3>Our Committee</h3>
+<p>Come find out a little bit more of the coolest club on earth.</p>
+<div class="container-fluid">
+	<div name="chairperson" class="member container-fluid col-12">
+		<img src="/images/snowman.jpg" class="round-img img-fluid col-xs-12" height=128" width="128"><h2>Chairman</h2></img>
+			<span class="blurb col-xs-8">
+				<ul>
+					<li> Coolest member of the club </li>
+					<li> Only shows up in the winter time, can't be found otherwise </li>
+					<li> Good with kids </li>
+				</ul>
+			</span>
+	</div>
+
+	<div name="secretary" class="member container-fluid col-12">
+		<img src="/images/icecube.jpg" class="round-img img-fluid col-xs-12" height="128" width="128"><h2>Secretary</h2></img>
+			<span class="blurb col-xs-8">
+				<ul>
+					<li> Always with his brothers </li>
+					<li> Not as cool as his brother, cucumber </li>
+					<li> Can't handle good weather, is always drenched in sweat </li>
+				</ul>
+			</span>
+	</div>
+
+	<div name="treasurer" class="member container-fluid col-12">
+		<img src="/images/cat.jpg" class="round-img img-fluid col-xs-12" height="128" width="128"><h2>Treasurer</h2></img>
+			<span class="blurb col-xs-8">
+				<ul>
+					<li> Great with money, but we don't know where he gets it </li>
+					<li> Starred in a musical in the 80s </li>
+					<li> Hard to understand, is a bit of a loner </li>
+				</ul>
+			</span>
+	</div>
+</div>
+
+<div class="container-fluid" id="comment_section">
+	<h3>Comment Section</h3>
+	<p>Leave a cool handle and an even cooler comment telling us about the coolest website on the market!</p>
+	<div class="container-fluid" id="comment-container">
+		<div id="username" class="input-group">
+			<div class="input-group-prepend">
+				<span id="handle-prefix" class="input-group-text">Handle</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Handle" aria-label="Handle" aria-describedby="handle" id="comment-handle">
+		</div>
+	
+		<div id="comment" class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Comment here</span>
+			</div>
+			<textarea class="form-control" aria-label="Comment here" id="comment-body" placeholder="Comment here..."></textarea>
+		</div>
+		<div id="buttons">
+			<button type="button" class="btn btn-dark float-left" onClick="show_comment()">Show comments</button>
+			<button type="button" class="btn btn-dark float-right" onClick="add_comment(document.getElementById('comment-handle').value, document.getElementById('comment-body').value)">Submit</button>
+		
+		</div>
+	</div>
+</div>
+<br>
+
+<div class="container float-left">
+	<h6 id="update-text"></h6>	
+	<div id="no-comments" class="container float-center"></div>
+	<div id="comments" class="container float-center">
+	</div>
+</div>
